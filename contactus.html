@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+           <!-- <h2>ARAN | Smartphone Repair</h2> -->
+           <img src="images/aran3.png" alt="">
+           
+
+           
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">Home</a></li>
+            
+            <li><a href="Appointment.html">Appointment</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+
+            <div class="theme-toggle">
+
+                    <!-- buttonka Madow iyo cadaanka -->
+                        <i class="fas fa-sun" id="theme-icon" onclick="toggleTheme()"></i> 
+                    </div>
+
+
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i> 
+        </div>
+        
+    </nav>
+
+
+    <div class="contact-container" id="contact">
+
+        <div class="contact-details">
+            <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Kaso Horjeedka Masjid Harawa</p>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-phone-alt"></i>
+                <p>+252 63 6559156</p>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-envelope"></i>
+                <p>Aran@gmail.com</p>
+            </div>
+        </div>
+        
+        <div class="contact-form-wrapper">
+            <h2>LEAVE US MESSAGE</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <span class="error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="email" name="email" placeholder="E-mail" >
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Message" ></textarea>
+                    <span class="error" id="messageError"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>ARAN | Smartphone Repair</h2>
+                <!-- <img src="images/logo.svg" alt="Aran Smartphone Repair Logo"> -->
+            </div>
+           
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p>Borama, Kasoo Horjeedka Masjid Harawa</p>
+                <p>252 636559156</p>
+                <p>Aran@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Aran Smartphone Repair. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="contact.js"></script>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/3519cb9023.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

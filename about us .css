@@ -1,0 +1,240 @@
+ *{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+font-family: 'josefin Sans',son-serif;
+
+
+
+}
+
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #FFBF00;
+    --third-color: #000;
+    --background-color: #fff;
+    --text-color: #000;
+    --card-bg-color: #f2f2f2;
+    --card-text-color: #000;
+    --card-icon:#000;
+    --nav-text:black;
+    --testamonial-text:#000;
+    --team-text-color:#000;
+    
+}
+
+[data-theme="dark"] {
+    --background-color: #000;
+    --text-color: #fff;
+    --card-bg-color: #FFBF00;
+    --card-text-color: #fff;
+    --card-icon:#FFBF00;
+    --nav-text:white;
+    --testamonial-text:#fff;
+    --team-text-color:#fff;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color:var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about .content img{
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+}
+.text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+
+}
+.content{
+    width: 12800px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.text h1 {
+    color: #FFBF00;
+    font-size: 85px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+
+}
+.text h5{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+.text p{
+    color:var(--card-text-color);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+
+}
+
+button{
+    background-color: #FFBF00;
+    color: black;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+button:hover{
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid #ffcc74;
+    color: #ffcc74;
+    transition: .4s;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 1180px) {
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about .content img{
+        margin-bottom: 35px;
+
+    }
+    .text h1 {
+        font-size: 60px;
+        margin-bottom: 25px;
+        
+    }
+} 
+
+.team-section{
+    width: 100%;
+    padding-bottom: 20px;
+    /* height: 130vh; */
+    background-color: var(--background-color);
+
+}
+.team-section .container {
+    width: 80%;
+    margin: auto;
+
+}
+.team-section .container .row{
+width: 60%;
+margin: auto;
+
+}
+.team-section .container .row .title{
+text-align: center;
+/* margin-top: 50px; */
+
+
+}
+.team-section .container .row .title h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color:#FFBF00;
+
+}
+.team-section .container .row .title p{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    color: var(--card-text-color);
+
+}
+ .team-section .container .team-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+
+} 
+
+.team-section .container .team-card .card{
+    width: 100%;
+    
+    background-color:var(--card-bg-color); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+
+}
+.team-section .container .team-card .card:hover{
+    background-color: transparent;
+    transform: translateY(-8px);
+    border-color: #FFBF00;
+
+}
+.team-section .container .team-card .card .image-section img{
+height: 150px;
+width: 150px;
+border-radius: 50%;
+border: 6px solid #fff;
+}
+.team-section .container .team-card .card .content{
+    width: 100%;
+    
+    text-align: center;
+
+}
+.team-section .container .team-card .card .content h3{
+    font-size: 27px;
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+    color: var(--team-text-color);
+
+
+}
+.team-section .container .team-card .card .content h4{
+    font-size: 17px;  
+    margin-top: 10px;
+    color: var(--card-text-color);
+}
+.team-section .container .team-card .card .content p{
+    font-size: 15px;
+    margin: 16px 0px;
+    line-height: 1.5;
+    color: var(--card-text-color);
+}
+@media screen and (max-width:900px){
+    .team-section .container .team-card{
+       
+        grid-template-columns: repeat(2,1fr);
+    } 
+}
+
+@media screen and (max-width:768px){
+    .team-section .container .team-card{
+       
+        grid-template-columns: 1fr;
+    } 
+}
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="apointment.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+           <!-- <h2>ARAN | Smartphone Repair</h2> -->
+           <img src="images/aran3.png" alt="">
+           
+
+           
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">Home</a></li>
+            
+            <li><a href="Appointment.html">Appointment</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+
+            <div class="theme-toggle">
+
+                    <!-- buttonka Madow iyo cadaanka -->
+                        <i class="fas fa-sun" id="theme-icon" onclick="toggleTheme()"></i> 
+                    </div>
+
+
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i> 
+        </div>
+        
+    </nav>
+
+<div class="container">
+
+    <div class="form-container">
+
+        <h1>Mobile Repair Appointment</h1>
+        <form id="appointmentForm" class="form">
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="name">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-close"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control ">
+                <label for="appointmentDateTime">Date and Time</label>
+                <input type="datetime-local" name="appointmentDateTime" id="appointmentDateTime" class="appointmentDateTime">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-close"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="phoneNumber">Number</label>
+                <input type="number" name="phoneNumber" id="phoneNumber" class="phoneNumber">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-close"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="country">Country</label>
+                <select name="country" id="country" class="country">
+                    <option value="">Select a country</option>
+                    <!-- Add more country options as needed -->
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="AU">Australia</option>
+                </select>
+                <i class="fa fa-check"></i>
+                <i class="fa fa-close"></i>
+                <small>Error Message</small>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+   
+</div>
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>Aran Smartphone Repair</h2>
+            <!-- <img src="images/logo.svg" alt="Aran Smartphone Repair Logo"> -->
+        </div>
+       
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-contact">
+            <p>Borama, Kasoo Horjeedka Masjid Harawa</p>
+            <p>252 636559156</p>
+            <p>Aran@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Aran Smartphone Repair. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="Appointment.js"></script>
+<script src="https://kit.fontawesome.com/3519cb9023.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
+c 
